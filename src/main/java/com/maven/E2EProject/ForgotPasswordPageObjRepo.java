@@ -12,8 +12,8 @@ public class ForgotPasswordPageObjRepo {
 		this.driver = driver;
 	}
 	
-	By emailId = By.id("user_email");
-	By sendMeInstruction = By.cssSelector("[type='submit']");
+	private By emailId = By.id("user_email");
+	private By sendMeInstruction = By.cssSelector("[type='submit']");
 	
 	public WebElement getEmailId() {
 		return driver.findElement(emailId);

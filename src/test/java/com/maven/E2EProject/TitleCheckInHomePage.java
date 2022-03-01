@@ -17,7 +17,9 @@ public class TitleCheckInHomePage extends Base {
 	
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	
-	WebDriver driver;
+	public WebDriver driver;
+	
+	HomePageObjRepo hp;
 	
 	@BeforeTest
 	public void browserInitializer() throws IOException {
@@ -28,10 +30,17 @@ public class TitleCheckInHomePage extends Base {
 	@Test
 	public void titleCheck() throws IOException {
 		
-		HomePageObjRepo hp = new HomePageObjRepo(driver);
+		hp = new HomePageObjRepo(driver);
 
 		Assert.assertEquals("FEATURED COURSES", hp.getTitle().getText());
 		log.info("Title matches the expected one");
+	}
+	
+	@Test
+	public void headerCheck() {
+		
+		Assert.assertEquals(hp.getHeader().getText(), "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
+		
 	}
 	
 	@AfterTest

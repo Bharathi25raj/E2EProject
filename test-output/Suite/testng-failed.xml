@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.maven.E2EProject.Listeners"/>
   </listeners>
-  <test thread-count="5" name="To Title Check(failed)">
+  <test thread-count="5" parallel="tests" name="To Check the Navigation(failed)">
+    <classes>
+      <class name="com.maven.E2EProject.navigationCheckInHomePage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getNavigation"/>
+          <include name="browserInitializer"/>
+        </methods>
+      </class> <!-- com.maven.E2EProject.navigationCheckInHomePage -->
+    </classes>
+  </test> <!-- To Check the Navigation(failed) -->
+  <test thread-count="5" parallel="tests" name="To Title Check(failed)">
     <classes>
       <class name="com.maven.E2EProject.TitleCheckInHomePage">
         <methods>
           <include name="titleCheck"/>
           <include name="browserInitializer"/>
           <include name="tearDown"/>
+          <include name="headerCheck"/>
         </methods>
       </class> <!-- com.maven.E2EProject.TitleCheckInHomePage -->
     </classes>
   </test> <!-- To Title Check(failed) -->
+  <test thread-count="5" parallel="tests" name="To automate Home Page(failed)">
+    <classes>
+      <class name="com.maven.E2EProject.HomePage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loadURL"/>
+          <include name="browserInitializer"/>
+        </methods>
+      </class> <!-- com.maven.E2EProject.HomePage -->
+    </classes>
+  </test> <!-- To automate Home Page(failed) -->
 </suite> <!-- Failed suite [Suite] -->

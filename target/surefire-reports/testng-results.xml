@@ -1,46 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-01T08:41:43 IST" name="Suite" finished-at="2022-03-01T08:42:06 IST" duration-ms="22948">
+  <suite started-at="2022-03-01T15:42:29 IST" name="Suite" finished-at="2022-03-01T15:43:09 IST" duration-ms="40522">
     <groups>
     </groups>
-    <test started-at="2022-03-01T08:41:43 IST" name="To Check the Navigation" finished-at="2022-03-01T08:42:02 IST" duration-ms="19079">
+    <test started-at="2022-03-01T15:42:29 IST" name="To Check the Navigation" finished-at="2022-03-01T15:43:09 IST" duration-ms="40522">
       <class name="com.maven.E2EProject.navigationCheckInHomePage">
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:com.maven.E2EProject.navigationCheckInHomePage@2c22a348]" started-at="2022-03-01T08:41:43 IST" name="browserInitializer" finished-at="2022-03-01T08:42:01 IST" duration-ms="17846" status="PASS">
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:com.maven.E2EProject.navigationCheckInHomePage@3aaf4f07]" started-at="2022-03-01T15:42:29 IST" name="browserInitializer" finished-at="2022-03-01T15:42:55 IST" duration-ms="25858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitializer -->
-        <test-method signature="getNavigation()[pri:0, instance:com.maven.E2EProject.navigationCheckInHomePage@2c22a348]" started-at="2022-03-01T08:42:01 IST" name="getNavigation" finished-at="2022-03-01T08:42:01 IST" duration-ms="65" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.maven.E2EProject.navigationCheckInHomePage@2c22a348]" started-at="2022-03-01T08:42:01 IST" name="tearDown" finished-at="2022-03-01T08:42:02 IST" duration-ms="1151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.maven.E2EProject.navigationCheckInHomePage -->
-    </test> <!-- To Check the Navigation -->
-    <test started-at="2022-03-01T08:41:43 IST" name="To Title Check" finished-at="2022-03-01T08:42:04 IST" duration-ms="21045">
-      <class name="com.maven.E2EProject.TitleCheckInHomePage">
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:com.maven.E2EProject.TitleCheckInHomePage@610db97e]" started-at="2022-03-01T08:41:43 IST" name="browserInitializer" finished-at="2022-03-01T08:42:01 IST" duration-ms="18001" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitializer -->
-        <test-method signature="titleCheck()[pri:0, instance:com.maven.E2EProject.TitleCheckInHomePage@610db97e]" started-at="2022-03-01T08:42:01 IST" name="titleCheck" finished-at="2022-03-01T08:42:01 IST" duration-ms="113" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="getNavigation()[pri:0, instance:com.maven.E2EProject.navigationCheckInHomePage@3aaf4f07]" started-at="2022-03-01T15:42:55 IST" name="getNavigation" finished-at="2022-03-01T15:42:58 IST" duration-ms="3183" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[expected [FEATURED COURSES] but found [FEATURED CORSES]]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-GD611T9', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b373e669aae889f185b3d377978fbc, isElementDisplayed {id=c2ab998b-175c-4e86-814c-a9e13fa22103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58310}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58310/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b1b373e669aae889f185b3d377978fbc)] -> xpath: //nav[@class='navbar-collapse collapse']]
+Session ID: b1b373e669aae889f185b3d377978fbc]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSES] but found [FEATURED CORSES]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.maven.E2EProject.TitleCheckInHomePage.titleCheck(TitleCheckInHomePage.java:33)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-GD611T9', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b373e669aae889f185b3d377978fbc, isElementDisplayed {id=c2ab998b-175c-4e86-814c-a9e13fa22103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58310}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58310/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b1b373e669aae889f185b3d377978fbc)] -> xpath: //nav[@class='navbar-collapse collapse']]
+Session ID: b1b373e669aae889f185b3d377978fbc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:307)
+at com.maven.E2EProject.navigationCheckInHomePage.getNavigation(navigationCheckInHomePage.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -66,59 +75,15 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- titleCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.maven.E2EProject.TitleCheckInHomePage@610db97e]" started-at="2022-03-01T08:42:03 IST" name="tearDown" finished-at="2022-03-01T08:42:04 IST" duration-ms="1346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.maven.E2EProject.TitleCheckInHomePage -->
-    </test> <!-- To Title Check -->
-    <test started-at="2022-03-01T08:41:43 IST" name="To automate Home Page" finished-at="2022-03-01T08:42:06 IST" duration-ms="22948">
-      <class name="com.maven.E2EProject.HomePage">
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:com.maven.E2EProject.HomePage@4cc61eb1]" started-at="2022-03-01T08:41:43 IST" name="browserInitializer" finished-at="2022-03-01T08:41:50 IST" duration-ms="7132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitializer -->
-        <test-method signature="loadURL(java.lang.String,java.lang.String)[pri:0, instance:com.maven.E2EProject.HomePage@4cc61eb1]" started-at="2022-03-01T08:41:50 IST" name="loadURL" data-provider="getData" finished-at="2022-03-01T08:42:03 IST" duration-ms="13342" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc@example.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Selenium@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadURL -->
-        <test-method signature="loadURL(java.lang.String,java.lang.String)[pri:0, instance:com.maven.E2EProject.HomePage@4cc61eb1]" started-at="2022-03-01T08:42:03 IST" name="loadURL" data-provider="getData" finished-at="2022-03-01T08:42:05 IST" duration-ms="1616" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[def@example.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testng@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.maven.E2EProject.HomePage@4cc61eb1]" started-at="2022-03-01T08:42:05 IST" name="tearDown" finished-at="2022-03-01T08:42:06 IST" duration-ms="816" status="PASS">
+        </test-method> <!-- getNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.maven.E2EProject.navigationCheckInHomePage@3aaf4f07]" started-at="2022-03-01T15:43:08 IST" name="tearDown" finished-at="2022-03-01T15:43:09 IST" duration-ms="887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.maven.E2EProject.HomePage -->
-    </test> <!-- To automate Home Page -->
+      </class> <!-- com.maven.E2EProject.navigationCheckInHomePage -->
+    </test> <!-- To Check the Navigation -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -3,6 +3,7 @@ package com.maven.E2EProject;
 import java.io.IOException;
 
 import org.apache.logging.log4j.*;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -12,6 +13,7 @@ import com.maven.resources.Base;
 
 public class HomePage extends Base {
 	
+	public WebDriver driver;
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	
 	@BeforeTest

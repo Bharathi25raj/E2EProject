@@ -14,9 +14,8 @@ import com.maven.resources.Base;
 
 public class navigationCheckInHomePage extends Base {
 	
+	public WebDriver driver;
 	public static Logger log = LogManager.getLogger(Base.class.getName());
-
-	WebDriver driver;
 	
 	@BeforeTest
 	public void browserInitializer() throws IOException {

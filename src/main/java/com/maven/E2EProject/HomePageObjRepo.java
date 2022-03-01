@@ -12,10 +12,11 @@ public class HomePageObjRepo {
 		this.driver = driver;
 	}
 	
-	By logIn = By.cssSelector("a[href*=sign_in]");
-	By title = By.cssSelector("section[id='content'] div[class='text-center'] h2");
-	By navBar = By.xpath("//nav[@class='navbar-collapse collapse']");
-
+	private By logIn = By.cssSelector("a[href*=sign_in]");
+	private By title = By.cssSelector("section[id='content'] div[class='text-center'] h2");
+	private By navBar = By.xpath("//nav[@class='navbar-collapse collapse']");
+	private By header = By.cssSelector("div[class*='video-banner'] h3");
+	
 	public LogInPageObjRepo getLogIn() {		
 		driver.findElement(logIn).click();
 		return new LogInPageObjRepo(driver);
@@ -28,6 +29,10 @@ public class HomePageObjRepo {
 	
 	public WebElement getNavBar() {		
 		return driver.findElement(navBar);
+	}
+
+	public WebElement getHeader() {
+		return driver.findElement(header);
 	}
 
 }

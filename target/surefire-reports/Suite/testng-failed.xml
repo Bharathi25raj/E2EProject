@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="com.maven.E2EProject.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="To Title Check(failed)" verbose="0">
+  <test thread-count="5" parallel="tests" name="To Check the Navigation(failed)" verbose="0">
     <classes>
-      <class name="com.maven.E2EProject.TitleCheckInHomePage">
+      <class name="com.maven.E2EProject.navigationCheckInHomePage">
         <methods>
-          <include name="titleCheck"/>
-          <include name="browserInitializer"/>
           <include name="tearDown"/>
+          <include name="getNavigation"/>
+          <include name="browserInitializer"/>
         </methods>
-      </class> <!-- com.maven.E2EProject.TitleCheckInHomePage -->
+      </class> <!-- com.maven.E2EProject.navigationCheckInHomePage -->
     </classes>
-  </test> <!-- To Title Check(failed) -->
+  </test> <!-- To Check the Navigation(failed) -->
 </suite> <!-- Failed suite [Suite] -->

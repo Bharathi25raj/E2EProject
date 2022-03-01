@@ -12,10 +12,10 @@ public class LogInPageObjRepo {
 		this.driver=driver;
 	}
 	
-	By emailId = By.id("user_email");
-	By password = By.cssSelector("input[id='user_password']");
-	By logIn = By.cssSelector("input[value='Log In']");
-	By forgotPassword = By.cssSelector("[href*='password/new']");
+	private By emailId = By.id("user_email");
+	private By password = By.cssSelector("input[id='user_password']");
+	private By logIn = By.cssSelector("input[value='Log In']");
+	private By forgotPassword = By.cssSelector("[href*='password/new']");
 	
 	
 	public WebElement getEmailId() {

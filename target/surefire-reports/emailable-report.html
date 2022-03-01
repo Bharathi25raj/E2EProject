@@ -9,25 +9,35 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">To Check the Navigation</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,079</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">To Title Check</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,045</td><td></td><td></td></tr>
-<tr><td><a href="#t2">To automate Home Page</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,948</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">63,072</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">To Check the Navigation</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,522</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">To Check the Navigation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.maven.E2EProject.navigationCheckInHomePage</td><td><a href="#m0">getNavigation</a></td><td rowspan="1">1646104321228</td><td rowspan="1">65</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">To Title Check &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.maven.E2EProject.TitleCheckInHomePage</td><td><a href="#m1">titleCheck</a></td><td rowspan="1">1646104321383</td><td rowspan="1">113</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">To automate Home Page &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.maven.E2EProject.HomePage</td><td><a href="#m2">loadURL</a></td><td rowspan="2">1646104310547</td><td rowspan="2">13342</td></tr><tr class="passedeven"><td><a href="#m3">loadURL</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">To Check the Navigation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.maven.E2EProject.navigationCheckInHomePage</td><td><a href="#m0">getNavigation</a></td><td rowspan="1">1646129575025</td><td rowspan="1">3183</td></tr></tbody>
 </table>
-<h2>To Check the Navigation</h2><h3 id="m0">com.maven.E2EProject.navigationCheckInHomePage#getNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>To Title Check</h2><h3 id="m1">com.maven.E2EProject.TitleCheckInHomePage#titleCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [FEATURED COURSES] but found [FEATURED CORSES]
-	at com.maven.E2EProject.TitleCheckInHomePage.titleCheck(TitleCheckInHomePage.java:33)
+<h2>To Check the Navigation</h2><h3 id="m0">com.maven.E2EProject.navigationCheckInHomePage#getNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-GD611T9&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b1b373e669aae889f185b3d377978fbc, isElementDisplayed {id=c2ab998b-175c-4e86-814c-a9e13fa22103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58310}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58310/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b1b373e669aae889f185b3d377978fbc)] -&gt; xpath: //nav[@class=&apos;navbar-collapse collapse&apos;]]
+Session ID: b1b373e669aae889f185b3d377978fbc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:307)
+	at com.maven.E2EProject.navigationCheckInHomePage.getNavigation(navigationCheckInHomePage.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>To automate Home Page</h2><h3 id="m2">com.maven.E2EProject.HomePage#loadURL</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>abc@example.com</td><td>Selenium@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.maven.E2EProject.HomePage#loadURL</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>def@example.com</td><td>testng@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
