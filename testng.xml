@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.maven.E2EProject.Listeners" />
+	</listeners>
+
+	<test thread-count="5" name="To automate Home Page">
+		<classes>
+			<class name="com.maven.E2EProject.HomePage" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="To Title Check">
+		<classes>
+			<class name="com.maven.E2EProject.TitleCheckInHomePage" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="To Check the Navigation">
+		<classes>
+			<class name="com.maven.E2EProject.navigationCheckInHomePage" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
