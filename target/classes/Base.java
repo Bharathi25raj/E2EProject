@@ -28,8 +28,10 @@ public class Base {
 		FileInputStream fis = new FileInputStream("C:\\Selenium\\E2EProject\\src\\main\\java\\com\\maven\\resources\\data.properties");
 		
 		prop.load(fis);
+		
+		String browser = System.getProperty("browser");
 			
-		String browser = prop.getProperty("browser");
+		//String browser = prop.getProperty("browser");
 		
 		if(browser.equals("chrome")) {			
 			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\WebDrivers\\chromedriver.exe");			

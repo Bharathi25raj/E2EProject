@@ -30,7 +30,7 @@ public class TitleCheckInHomePage extends Base {
 		
 		HomePageObjRepo hp = new HomePageObjRepo(driver);
 
-		Assert.assertEquals("FEATURED CORSES", hp.getTitle().getText());
+		Assert.assertEquals("FEATURED COURSES", hp.getTitle().getText());
 		log.info("Title matches the expected one");
 	}
 	
