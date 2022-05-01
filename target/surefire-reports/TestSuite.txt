@@ -1,22 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 65.889 s <<< FAILURE! - in TestSuite
-com.maven.E2EProject.TitleCheckInHomePage.headerCheck  Time elapsed: 3.348 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.maven.E2EProject.TitleCheckInHomePage.headerCheck(TitleCheckInHomePage.java:42)
-
-com.maven.E2EProject.navigationCheckInHomePage.getNavigation  Time elapsed: 10.418 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-GD611T9', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b1b373e669aae889f185b3d377978fbc, isElementDisplayed {id=c2ab998b-175c-4e86-814c-a9e13fa22103}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58310}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58310/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b1b373e669aae889f185b3d377978fbc)] -> xpath: //nav[@class='navbar-collapse collapse']]
-Session ID: b1b373e669aae889f185b3d377978fbc
-	at com.maven.E2EProject.navigationCheckInHomePage.getNavigation(navigationCheckInHomePage.java:31)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 62.97 s - in TestSuite

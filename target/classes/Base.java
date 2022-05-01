@@ -32,9 +32,11 @@ public class Base {
 
 		prop.load(fis);
 
-		String browser = System.getProperty("browser");
+		// String browser = System.getProperty("browser");
+
+		String browser = prop.getProperty("browser");
+
 		System.out.println(browser);
-		// String browser = prop.getProperty("browser");
 
 		if (browser.contains("chrome")) {
 			System.setProperty("webdriver.chrome.driver",

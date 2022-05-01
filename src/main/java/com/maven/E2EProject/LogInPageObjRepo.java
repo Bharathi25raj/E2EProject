@@ -16,6 +16,7 @@ public class LogInPageObjRepo {
 	private By password = By.cssSelector("input[id='user_password']");
 	private By logIn = By.cssSelector("input[value='Log In']");
 	private By forgotPassword = By.cssSelector("[href*='password/new']");
+	private By invalidPWD = By.xpath("//div[@class='alert alert-danger alert-show mb-5']");
 	
 	
 	public WebElement getEmailId() {
@@ -28,6 +29,10 @@ public class LogInPageObjRepo {
 	
 	public WebElement getLogIn() {
 		return driver.findElement(logIn);
+	}
+	
+	public WebElement getInvalidPWD() {
+		return driver.findElement(invalidPWD);
 	}
 	
 	public ForgotPasswordPageObjRepo getForgotPasswordPage() {

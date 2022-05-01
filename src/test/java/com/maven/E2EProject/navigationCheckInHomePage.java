@@ -16,7 +16,7 @@ public class navigationCheckInHomePage extends Base {
 	
 	public WebDriver driver;
 	public static Logger log = LogManager.getLogger(Base.class.getName());
-	
+		
 	@BeforeTest
 	public void browserInitializer() throws IOException {
 		driver = initializeDriver();
@@ -25,7 +25,7 @@ public class navigationCheckInHomePage extends Base {
 	
 	@Test
 	public void getNavigation() throws IOException {
-				
+		
 		HomePageObjRepo hp = new HomePageObjRepo(driver);
 		
 		Assert.assertTrue(hp.getNavBar().isDisplayed());

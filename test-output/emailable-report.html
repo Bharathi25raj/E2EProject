@@ -9,81 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">To Check the Navigation</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">83</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">To Title Check</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">86</td><td></td><td></td></tr>
-<tr><td><a href="#t2">To automate Home Page</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">85</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num attn">5</th><th class="num">0</th><th class="num">0</th><th class="num">254</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">To Validate Login</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">52,203</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">To Check the Navigation &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.maven.E2EProject.navigationCheckInHomePage</td><td><a href="#m0">browserInitializer</a></td><td rowspan="1">1646126115455</td><td rowspan="1">10</td></tr><tr><th colspan="4">To Check the Navigation &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.maven.E2EProject.navigationCheckInHomePage</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1646126115526</td><td rowspan="1">0</td></tr><tr><th colspan="4">To Check the Navigation &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.maven.E2EProject.navigationCheckInHomePage</td><td><a href="#m2">getNavigation</a></td><td rowspan="1">1646126115509</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">To Title Check &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.maven.E2EProject.TitleCheckInHomePage</td><td><a href="#m3">browserInitializer</a></td><td rowspan="1">1646126115455</td><td rowspan="1">10</td></tr><tr><th colspan="4">To Title Check &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.maven.E2EProject.TitleCheckInHomePage</td><td><a href="#m4">tearDown</a></td><td rowspan="1">1646126115529</td><td rowspan="1">0</td></tr><tr><th colspan="4">To Title Check &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.maven.E2EProject.TitleCheckInHomePage</td><td><a href="#m5">headerCheck</a></td><td rowspan="1">1646126115509</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">titleCheck</a></td><td rowspan="1">1646126115523</td><td rowspan="1">1</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">To automate Home Page &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.maven.E2EProject.HomePage</td><td><a href="#m7">browserInitializer</a></td><td rowspan="1">1646126115455</td><td rowspan="1">10</td></tr><tr><th colspan="4">To automate Home Page &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.maven.E2EProject.HomePage</td><td><a href="#m8">tearDown</a></td><td rowspan="1">1646126115527</td><td rowspan="1">0</td></tr><tr><th colspan="4">To automate Home Page &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.maven.E2EProject.HomePage</td><td><a href="#m9">loadURL</a></td><td rowspan="2">1646126115522</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m10">loadURL</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">To Validate Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">cucumberOptions.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1651285771259</td><td rowspan="2">27534</td></tr><tr class="passedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
 </table>
-<h2>To Check the Navigation</h2><h3 id="m0">com.maven.E2EProject.navigationCheckInHomePage#browserInitializer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;browser&quot; is null
-	at com.maven.resources.Base.initializeDriver(Base.java:39)
-	at com.maven.E2EProject.navigationCheckInHomePage.browserInitializer(navigationCheckInHomePage.java:22)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.maven.E2EProject.navigationCheckInHomePage#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.maven.E2EProject.navigationCheckInHomePage#getNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;browser&quot; is null
-	at com.maven.resources.Base.initializeDriver(Base.java:39)
-	at com.maven.E2EProject.navigationCheckInHomePage.browserInitializer(navigationCheckInHomePage.java:22)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>To Title Check</h2><h3 id="m3">com.maven.E2EProject.TitleCheckInHomePage#browserInitializer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;browser&quot; is null
-	at com.maven.resources.Base.initializeDriver(Base.java:39)
-	at com.maven.E2EProject.TitleCheckInHomePage.browserInitializer(TitleCheckInHomePage.java:26)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.maven.E2EProject.TitleCheckInHomePage#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.maven.E2EProject.TitleCheckInHomePage#headerCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;browser&quot; is null
-	at com.maven.resources.Base.initializeDriver(Base.java:39)
-	at com.maven.E2EProject.TitleCheckInHomePage.browserInitializer(TitleCheckInHomePage.java:26)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.maven.E2EProject.TitleCheckInHomePage#titleCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;browser&quot; is null
-	at com.maven.resources.Base.initializeDriver(Base.java:39)
-	at com.maven.E2EProject.TitleCheckInHomePage.browserInitializer(TitleCheckInHomePage.java:26)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>To automate Home Page</h2><h3 id="m7">com.maven.E2EProject.HomePage#browserInitializer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;browser&quot; is null
-	at com.maven.resources.Base.initializeDriver(Base.java:39)
-	at com.maven.E2EProject.HomePage.browserInitializer(HomePage.java:21)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.maven.E2EProject.HomePage#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.maven.E2EProject.HomePage#loadURL</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>def@example.com</td><td>testng@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;browser&quot; is null
-	at com.maven.resources.Base.initializeDriver(Base.java:39)
-	at com.maven.E2EProject.HomePage.browserInitializer(HomePage.java:21)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.maven.E2EProject.HomePage#loadURL</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>abc@example.com</td><td>Selenium@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;browser&quot; is null
-	at com.maven.resources.Base.initializeDriver(Base.java:39)
-	at com.maven.E2EProject.HomePage.browserInitializer(HomePage.java:21)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>To Validate Login</h2><h3 id="m0">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Positive Test, Validating Login&quot;</td><td>&quot;Login to Application&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Positive Test, Validating Login&quot;</td><td>&quot;Login to Application&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
