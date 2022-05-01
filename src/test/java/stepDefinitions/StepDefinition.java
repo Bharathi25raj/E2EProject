@@ -21,6 +21,7 @@ public class StepDefinition extends Base {
 	@Given("navigate to {string} site")
 	public void navigate_to_site(String string) {
 		driver.get(string);
+		System.out.println("driver invoked");
 	}
 
 	@Given("Click on login home page to land on secure sign in page")
@@ -33,6 +34,7 @@ public class StepDefinition extends Base {
 		}
 
 		hp.getLogIn();
+		System.out.println("Loggedin to the home page");
 	}
 
 //	@When("user enters {string} and {string} and logs in")
