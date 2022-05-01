@@ -52,6 +52,7 @@ public class StepDefinition extends Base {
 		lp.getEmailId().sendKeys(username);
 		lp.getPassword().sendKeys(password);
 		lp.getLogIn().click();
+		System.out.println("Successfully logged in with user name and password");
 	}
 
 	@Then("verify that user is logged in successfully")
@@ -63,9 +64,6 @@ public class StepDefinition extends Base {
 	@And("^close the browser$")
     public void close_the_browser() {
 		driver.quit();
-    }
-
-	
-	
+    }	
 
 }

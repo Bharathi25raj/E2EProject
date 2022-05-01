@@ -13,3 +13,4 @@ Examples:
 |username			|password
 |test					|123445
 |test1				|344657
+|test2				|689547
